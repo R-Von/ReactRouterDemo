@@ -1,11 +1,12 @@
 import React , { Component , Fragment } from 'react'
 import 'antd/dist/antd.css'
 import { List } from 'antd'
-import { Link } from 'react-router-dom'
+import { Link , Redirect } from 'react-router-dom'
 
 class Index extends Component {
     constructor(props){
         super(props)
+        // this.props.history.push('/home/')
         this.state = {
             list:[
                 {cid:123,title:"article-1"},
@@ -17,6 +18,7 @@ class Index extends Component {
     render(){
         return(
             <Fragment>
+                {/* <Redirect to="/home" />  */}
                 <h2>Index</h2>
                 <List
                     bordered

@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router , Route , Link } from 'react-router-dom'
 import Index from './Pages/index'
 import List from './Pages/list'
-
+import Home from './Pages/home'
 
 // function Index(){
 //     return (
@@ -33,6 +33,9 @@ function AppRouter(){
             {/* <Route path="/list" component = { List } /> */}
             {/* 路由传参  */}
             <Route path="/list/:id" component = { List } />
+
+            <Route path="/home" component = { Home } />
+
        </Router>
     )
 }
